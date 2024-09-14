@@ -1,4 +1,4 @@
-import { SearchIcon } from "lucide-react"
+import { EyeIcon, FootprintsIcon, SearchIcon } from "lucide-react"
 import Image from "next/image"
 import BarbershopItem from "./_components/barbershop-item"
 import Header from "./_components/header"
@@ -30,6 +30,39 @@ const Home = async () => {
           <Input placeholder="Faça sua busca..." />
           <Button>
             <SearchIcon />
+          </Button>
+        </div>
+
+        {/* BUSCA RÁPIDA */}
+        <div className="mt-6 flex gap-3 overflow-x-scroll [&::-webkit-scrollbar]:hidden">
+          <Button className="gap-2" variant="secondary">
+            <Image src="/cabelo.svg" width={16} height={16} alt="Cabelo" />
+            Cabelo
+          </Button>
+
+          <Button className="gap-2" variant="secondary">
+            <Image src="/barba.svg" width={16} height={16} alt="Barba" />
+            Barba
+          </Button>
+
+          <Button className="gap-2" variant="secondary">
+            <Image
+              src="/acabamento.svg"
+              width={16}
+              height={16}
+              alt="Acabamento"
+            />
+            Acabamento
+          </Button>
+
+          <Button className="gap-2" variant="secondary">
+            <FootprintsIcon size={16} />
+            Pézinho
+          </Button>
+
+          <Button className="gap-2" variant="secondary">
+            <EyeIcon size={16} />
+            Sobrancelha
           </Button>
         </div>
 
