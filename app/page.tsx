@@ -12,6 +12,12 @@ import { db } from "./_lib/prisma"
 const Home = async () => {
   // chamar meu banco de dados
   const barbershops = await db.barbershop.findMany({})
+  const popularBarbershops = await db.barbershop.findMany({
+    orderBy: {
+      name: "desc",
+    },
+  })
+
   return (
     <div>
       {/* header */}
@@ -27,6 +33,7 @@ const Home = async () => {
           </Button>
         </div>
 
+        {/* IMAGEM */}
         <div className="relative mt-6 h-[150px] w-full">
           <Image
             alt="Agende nos melhores com FSW Barber"
@@ -69,6 +76,15 @@ const Home = async () => {
         </h2>
         <div className="flex gap-4 overflow-auto [&::-webkit-scrollbar]:hidden">
           {barbershops.map((barbershop) => (
+            <BarbershopItem key={barbershop.id} barbershop={barbershop} />
+          ))}
+        </div>
+
+        <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">
+          Populares
+        </h2>
+        <div className="flex gap-4 overflow-auto [&::-webkit-scrollbar]:hidden">
+          {popularBarbershops.map((barbershop) => (
             <BarbershopItem key={barbershop.id} barbershop={barbershop} />
           ))}
         </div>
