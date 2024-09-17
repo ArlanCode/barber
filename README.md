@@ -37,7 +37,8 @@ Siga as instruções abaixo para rodar o projeto localmente:
 
 2. Configure o banco de dados:
 
-  . Crie um banco de dados PostgreSQL.
+  . Crie um banco de dados PostgreSQL
+
   . Defina as variáveis de ambiente no arquivo .env com as credenciais do banco
   
   . Exemplo de configuração no .env:
