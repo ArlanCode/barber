@@ -4,6 +4,8 @@ Bem-vindo ao **FSW Barber**, um aplicativo web desenvolvido para barbearias, ofe
 
 Acesse o sistema em produção aqui: [FSW Barber](https://barber-bay-one.vercel.app/)
 
+Obs: O layout foi projetado para dispositivos móveis. Caso esteja acessando via desktop, utilize o DevTools (F12) para simular um ambiente mobile.
+
 ## Funcionalidades
 
 - **Login e Autenticação**: Faça login com sua conta Google para maior segurança e conveniência.
