@@ -37,13 +37,17 @@ Siga as instruções abaixo para rodar o projeto localmente:
 
 2. Configure o banco de dados:
 
-  - Crie um banco de dados PostgreSQL.
-  - Defina as variáveis de ambiente no arquivo .env com as credenciais do banco
+  . Crie um banco de dados PostgreSQL.
+  . Defina as variáveis de ambiente no arquivo .env com as credenciais do banco
   
   . Exemplo de configuração no .env:
+
       DATABASE_URL="postgresql://usuario:senha@localhost:5432/fswbarber"
+
       GOOGLE_CLIENT_ID="sua_google_client_id"
+
       GOOGLE_CLIENT_SECRET="sua_google_client_secret"
+
       NEXT_AUTH_SECRET="secret"
 
 3. Instale as dependências:  
